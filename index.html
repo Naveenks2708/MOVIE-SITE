@@ -1,0 +1,37 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Search App</title>
+  <link rel="icon" href="videography.png" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Movie Search</h1>
+    <div class="search">
+      <input type="text" id="query" placeholder="Enter movie title" />
+      <select id="typeFilter">
+        <option value="">All</option>
+        <option value="movie">Movies</option>
+        <option value="series">Series</option>
+      </select>
+      <button id="searchBtn">Search</button>
+    </div>
+    <button id="showFavoritesBtn">Show Favorites</button>
+    <div id="movies" class="movies-grid"></div>
+    <div id="pagination" class="pagination-controls"></div>
+  </div>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <div id="modal-details"></div>
+    </div>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
